@@ -13,3 +13,21 @@
 
 - System contains Single elevator car
 - Single car - single control
+
+### Ride sharing app lld
+* Program should take 2 or more drivers and a set of riders reqeusting rides.
+* Multiple rides can happen simultaneously.
+*
+* Algorithm for ride amount charged
+* If # of seats booked >=2 : (# of km)X(# of seats)X(0.75)X(rate per km)
+* Else :  (# of km)X(rate per km)
+*
+**Functions**:
+1. Register a cab/driver
+2. Register a rider
+3. Book a ride
+4. Create a ride
+5. Generate a bill
+6. Check the validity of an ongoing ride for a new ride
+7. Update the ride status
+8. Fetch revenue of all the rides taken by a driver/cab
