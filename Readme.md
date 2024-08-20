@@ -31,3 +31,6 @@
 6. Check the validity of an ongoing ride for a new ride
 7. Update the ride status
 8. Fetch revenue of all the rides taken by a driver/cab
+
+### State design pattern
+* Example using simple gumball machine 
