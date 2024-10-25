@@ -14,6 +14,9 @@ public class RateLimitService {
         RateLimitConfig rateLimitConfig = new RateLimitConfig();
         rateLimitConfig.strategy = new TokenBucketStrategy();
         configMap.put("abc",rateLimitConfig);
+        RateLimitConfig slidingWindowConfig = new RateLimitConfig();
+        slidingWindowConfig.strategy = new SlidingWindowStrategy();
+        configMap.put("def",slidingWindowConfig);
     }
     public boolean isAllowed(String service, String key){
         return configMap.get(service).strategy.isAllowed(key);
