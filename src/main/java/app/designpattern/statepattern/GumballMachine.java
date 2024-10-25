@@ -1,4 +1,4 @@
-package org.designpattern.statepattern;
+package app.designpattern.statepattern;
 
 public class GumballMachine {
     NoCoinState noCoinState = new NoCoinState(this);
