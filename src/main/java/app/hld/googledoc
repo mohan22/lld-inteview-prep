@@ -1,0 +1,53 @@
+Realtime file editing and sharing - Google doc
+
+Flow :
+1. User A creates a doc and shares with User B with specific access(read/modify)
+2. User B based on the access given, can read/modify
+3. User A should be able to see the modifications from B
+
+Questions:
+1. Supported file type? Plain Doc or Structured doc like XLSX ?
+2. How many users do we need to share? How many users can modify the doc concurrently?
+3. How the user share the document? Is it invite? or is it using sharable link?
+4
+
+Non Functional Req :
+1. DAU -
+2. Strong consitency at a doc level
+3. eventual consitency of metadata
+4. Avalability
+
+
+API
+
+POST
+/api/v1/doc
+
+returns status, docid
+
+
+GET
+/api/v1/doc/docid
+return doc
+
+
+
+POST
+/api/v1/invite
+
+input : docid, invited
+output : status : success/fail
+
+
+POST
+/edit/docid
+header : api-key
+input : blockid, content
+output : status
+
+
+
+
+
+
+

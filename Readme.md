@@ -8,6 +8,16 @@
 
 ## Problems
 
+### Custom rate limiter
+- https://leetcode.com/discuss/post/5576519/deliveroo-oa-by-anonymous_user-m6ef/
+
+### GET API implementation using HttpClient of java net package
+- Tested using the public base = "https://rickandmortyapi.com/api/character"
+- This is the model problem for REST api problems related to Hackerrank screening tests.
+
+- System contains Single elevator car
+- Single car - single control
+
 
 ### Simple elevator system design
 

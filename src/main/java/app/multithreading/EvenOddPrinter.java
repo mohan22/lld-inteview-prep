@@ -8,11 +8,9 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class EvenOddPrinter {
     static int n;
-    static Object lock = new Object();
+//    static Object lock = new Object();
 
     public static void main(String[] args) {
-//        usingAtomicInt();
-//        usingSynchronization();
         usingReentrantLock();
     }
 
@@ -28,7 +26,6 @@ public class EvenOddPrinter {
                     if (n % 2 != 0) {
                         evenCond.await();
                     }
-
                     System.out.println("Thread name " + Thread.currentThread().getName() + " " + n);
                     n++;
                     oddCond.signal();
@@ -95,6 +92,7 @@ public class EvenOddPrinter {
 
     static void usingSynchronization() {
         n = 0;
+        Object lock = new Object();
         Thread t1 = new Thread(() -> {
             while (n < 10) {
                 synchronized (lock) {
