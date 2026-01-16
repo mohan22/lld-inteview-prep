@@ -21,6 +21,9 @@ dependencies {
     implementation 'org.apache.httpcomponents:httpclient:4.5.14'
     // https://mvnrepository.com/artifact/com.google.code.gson/gson
     implementation 'com.google.code.gson:gson:2.13.1'
+
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+    implementation 'com.google.guava:guava:33.5.0-jre'
 }
 
 test {

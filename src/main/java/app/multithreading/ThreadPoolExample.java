@@ -1,4 +1,4 @@
-package app.example;
+package app.multithreading;
 
 import java.util.Date;
 import java.util.concurrent.*;
@@ -7,7 +7,7 @@ public class ThreadPoolExample {
 
     public static void main(String[] args) throws InterruptedException {
         ExecutorService service = new ThreadPoolExecutor(0,30,10, TimeUnit.SECONDS, new LinkedBlockingDeque<>(1));//Executors.//Executors.newFixedThreadPool(5);
-
+        //service = Executors.newFixedThreadPool(10);
         int start = 1;
         int end = 20;
         System.out.println(new Date());
